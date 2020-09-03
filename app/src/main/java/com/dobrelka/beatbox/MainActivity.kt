@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         // Configuring RecyclerView
         binding.recyclerView.apply {
             layoutManager = GridLayoutManager(context, 3)
+            adapter = SoundAdapter()
         }
     }
 
