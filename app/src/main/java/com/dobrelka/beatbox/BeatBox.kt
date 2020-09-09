@@ -18,7 +18,7 @@ class BeatBox(private val assets: AssetManager) {
 
     // Listing of what you have in your assets, you can  use the list(String) function.
     //Function called loadSounds()  looks in your assets with list(String)
-    fun loadSounds(): List<Sound> {
+    private fun loadSounds(): List<Sound> {
 
         val soundNames: Array<String>
 
