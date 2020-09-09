@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private inner class SoundAdapter() :
+    private inner class SoundAdapter(private val sounds: List<Sound>) :
         RecyclerView.Adapter<SoundHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int):
@@ -53,6 +53,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        override fun getItemCount() = 0
+        override fun getItemCount() = sounds.size
     }
 }
