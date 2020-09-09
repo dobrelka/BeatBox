@@ -6,4 +6,7 @@ class SoundViewModel {
         set(sound) {
             field = sound
         }
+
+    val title: String?
+        get() = sound?.name
 }
