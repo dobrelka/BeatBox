@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         beatBox = BeatBox(assets)
-        beatBox.loadSounds()
 
         // Inflating a binding class
         val binding: ActivityMainBinding =
